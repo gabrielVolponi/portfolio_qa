@@ -206,6 +206,32 @@ section {
   border-radius: 3rem;
 }
 
+.stacks {
+  height: 10vh;
+  /* margin: 3rem; */
+  margin-bottom: 5rem;
+  position: relative;
+  top: -10px;
+}
+
+.container_stacks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.container_stacks i {
+  font-size: 50px;
+}
+
+.container_stacks i:hover {
+  background: linear-gradient(to right, rgb(255, 0, 255), rgb(0, 157, 255));
+  background-clip: text;
+  color: transparent;
+}
+
 .grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -309,6 +335,25 @@ section {
     width: 30vw;
     height: 20vw;
 }
+
+footer ul {
+  display: flex;
+  list-style-type: none;
+  gap: 3rem;
+  background-color: black;
+  padding: 3rem 3rem;
+  color: white;
+  justify-content: center;
+  align-items: center;
+}
+
+footer ul li:hover {
+  background: linear-gradient(to right, #009dff, #ff00ff);
+  background-clip: text;
+  color: transparent;
+  cursor: pointer;
+}
+
 
 /* Estilo para a barra de rolagem */
 ::-webkit-scrollbar {
