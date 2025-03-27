@@ -22,17 +22,17 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 3rem; /* Espaçamento original entre os elementos */
+  gap: 4rem; /* Aumentar o espaçamento entre os elementos */
   background-color: rgba(0, 0, 0, 0.8);
   color: white;
-  padding: 0.5rem 1.5rem; /* Tamanho original do padding */
+  padding: 1rem 3rem; /* Aumentar o padding para aumentar o tamanho do header */
   border-radius: 3rem;
   z-index: 1000;
 }
 
 .logo {
   color: white;
-  font-size: 1.3rem; /* Tamanho original da fonte */
+  font-size: 2rem; /* Aumentar o tamanho da fonte do logo */
   font-weight: 600;
   text-wrap: nowrap;
   transition: 0.3s ease-in-out;
@@ -44,14 +44,14 @@ header {
 
 .nav_links {
   display: flex;
-  gap: 2rem; /* Espaçamento original entre os links */
+  gap: 3rem; /* Aumentar o espaçamento entre os links */
 }
 
 li a {
   position: relative;
   color: white;
   font-weight: 300;
-  font-size: 1.2rem; /* Tamanho original da fonte dos links */
+  font-size: 1.5rem; /* Aumentar o tamanho da fonte dos links */
 }
 
 li a::before {
@@ -71,8 +71,8 @@ li a:hover::before {
 }
 
 .visit_btn {
-  padding: 0.5rem 1rem; /* Tamanho original do botão */
-  font-size: 0.9rem; /* Tamanho original da fonte */
+  padding: 0.8rem 1.5rem; /* Aumentar o tamanho do botão */
+  font-size: 1rem; /* Aumentar o tamanho da fonte do botão */
   border-radius: 3rem;
   border: none;
   font-weight: 300;
@@ -85,7 +85,7 @@ li a:hover::before {
 
 .visit_btn:hover {
   background: linear-gradient(to right, rgb(255, 0, 255), rgb(0, 157, 255));
-  transform: scale(1.03);
+  transform: scale(1.05);
 }
 
 #menu_icon {
