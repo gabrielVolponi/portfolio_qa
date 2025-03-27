@@ -41,7 +41,7 @@ As a Quality Engineer, my goal is to ensure the software I work with is reliable
 ## 📬 **Contact Me**  
 
 - 📧 **Email:** gabriel.volponi11@gmail.com 
-- 🌐 **LinkedIn:** [https://www.linkedin.com/in/gabriel-volponi-a11720215/](#)  
+- 🌐 **LinkedIn:** https://www.linkedin.com/in/gabriel-volponi-a11720215/(#)  
 - 🌍 **Location:** Available for remote opportunities  
 
 Feel free to reach out for collaborations, consulting, or just to chat about QA, automation, and software development!
