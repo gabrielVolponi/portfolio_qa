@@ -11,28 +11,27 @@
 </head>
 
 <body>
-    <header class="header">
-        <a href="#" class="logo"><span>Gabriel Volponi</span></a>
-        <nav>
+    <header class="header" aria-label="Main navigation">
+        <a href="#" class="logo" aria-label="Homepage"><span>Gabriel Volponi</span></a>
+        <nav aria-label="Primary navigation">
             <ul class="nav_links">
-                <li><a href="#" title="Section About">About</a></li>
-                <li>
-                    <a href="#experience" title="Section Experience">Experience</a>
-                </li>
-                <li><a href="#projects" title="Section Projects">Projects</a></li>
-                <li><a href="#education" title="Section Education">Education</a></li>
+                <li><a href="#" title="Section About" aria-label="Navigate to About section">About</a></li>
+                <li><a href="#experience" title="Section Experience" aria-label="Navigate to Experience section">Experience</a></li>
+                <li><a href="#projects" title="Section Projects" aria-label="Navigate to Projects section">Projects</a></li>
+                <li><a href="#education" title="Section Education" aria-label="Navigate to Education section">Education</a></li>
             </ul>
         </nav>
-        <i class="fa-solid fa-bars" id="menu_icon"></i>
-        <a href="https://github.com/gabrielVolponi" target="_blank" title="Link para Linkedin"><button
-                class="visit_btn">Visit Github</button></a>
+        <i class="fa-solid fa-bars" id="menu_icon" aria-label="Open menu"></i>
+        <a href="https://github.com/gabrielVolponi" target="_blank" title="Link para Github" aria-label="Visit my Github profile">
+            <button class="visit_btn">Visit Github</button>
+        </a>
     </header>
 
     <main>
-        <section class="about" id="about">
+        <section class="about" id="about" aria-label="About section">
             <div class="about_container">
-                <i id="mini_menu" class="fa-solid fa-bars"></i>
-                <a href="https://br.linkedin.com/in/gabriel-volponi-a11720215/en" target="_blank">
+                <i id="mini_menu" class="fa-solid fa-bars" aria-label="Open mini menu"></i>
+                <a href="https://br.linkedin.com/in/gabriel-volponi-a11720215/en" target="_blank" aria-label="Visit my LinkedIn profile">
                     <img src="images/about/eu.png" alt="Gabriel Volponi" title="Gabriel Volponi" />
                 </a>
 
@@ -40,39 +39,34 @@
                     <div class="text">
                         <h3>Hi, I'm</h3>
                         <h1>Gabriel Volponi</h1>
-                        <span class="frontend">Sr. Quality Enginner</span>
+                        <span class="frontend">Sr. Quality Engineer</span>
                     </div>
 
-                    <div class="btn_group" download>
-                        <a href="doc/gabriel_voponi_resume.pdf" download="doc/gabriel_voponi_resume.pdf"
-                            title="Link Download Curriculo">
+                    <div class="btn_group">
+                        <a href="doc/gabriel_voponi_resume.pdf" download="doc/gabriel_voponi_resume.pdf" title="Link Download Curriculo" aria-label="Download my CV">
                             <div class="btn"><p>Download CV</p></div>
                         </a>
-                        <a href="mailto:gabrielvolponi11@gmail.com?subject=Proposta%20Comercial&body=Quero%20um%20orçamento"
-                            title="Link Mandar E-mail">
+                        <a href="mailto:gabrielvolponi11@gmail.com?subject=Proposta%20Comercial&body=Quero%20um%20orçamento" title="Link Mandar E-mail" aria-label="Send me an email">
                             <div class="btn"><p>Contact</p></div>
                         </a>
                     </div>
 
-                    <div class="socials">
-                        <a href="https://github.com/gabrielVolponi" target="_blank" title="Link Github"><i
-                                class="fa-brands fa-github"></i></a>
-                        <a href="https://br.linkedin.com/in/gabriel-volponi-a11720215/en" target="_blank"
-                            title="Link Linkedin"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="https://api.whatsapp.com/send?phone=5511912879966" target="_blank"
-                            title="Link whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+                    <div class="socials" aria-label="Social media links">
+                        <a href="https://github.com/gabrielVolponi" target="_blank" title="Link Github" aria-label="Visit my Github profile"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://br.linkedin.com/in/gabriel-volponi-a11720215/en" target="_blank" title="Link Linkedin" aria-label="Visit my LinkedIn profile"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://api.whatsapp.com/send?phone=5511912879966" target="_blank" title="Link whatsapp" aria-label="Send me a message on WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="experience" class="experience">
+        <section id="experience" class="experience" aria-label="Experience section">
             <h2 class="section_title">Experience</h2>
 
             <div class="experience_info">
                 <div class="grid">
-                    <div class="grid_card">
-                        <i class="fa-solid fa-computer"></i>
+                    <div class="grid_card" aria-label="Quality Assurance experience">
+                        <i class="fa-solid fa-computer" aria-label="Quality Assurance icon"></i>
                         <span>Quality Assurance</span>
                         <h3>6 anos</h3>
                         <p>
@@ -82,8 +76,8 @@
                         </p>
                     </div>
 
-                    <div class="grid_card">
-                        <i class="fa-solid fa-code"></i>
+                    <div class="grid_card" aria-label="Web Developer experience">
+                        <i class="fa-solid fa-code" aria-label="Web Developer icon"></i>
                         <span>Web Developer</span>
                         <h3>3 years</h3>
                         <p>
@@ -94,8 +88,8 @@
                         </p>
                     </div>
 
-                    <div class="grid_card">
-                        <i class="fa-solid fa-robot"></i>
+                    <div class="grid_card" aria-label="Test Automation experience">
+                        <i class="fa-solid fa-robot" aria-label="Test Automation icon"></i>
                         <span>Test Automation</span>
                         <h3>5 years</h3>
                         <p>
@@ -106,8 +100,8 @@
                         </p>
                     </div>
 
-                    <div class="grid_card">
-                        <i class="fa-solid fa-mobile"></i>
+                    <div class="grid_card" aria-label="Mobile Tester experience">
+                        <i class="fa-solid fa-mobile" aria-label="Mobile Tester icon"></i>
                         <span>Mobile Tester</span>
                         <h3>5 years</h3>
                         <p>
@@ -120,28 +114,28 @@
                 </div>
             </div>
 
-            <img src="images/experience/memoji.jpg" alt="Minha imagem" title="Minha imagem" />
+            <img src="images/experience/memoji.jpg" alt="Minha imagem" title="Minha imagem" aria-label="Gabriel Volponi's memoji" />
         </section>
 
-        <article id="stacks" class="stacks">
+        <article id="stacks" class="stacks" aria-label="Stacks section">
             <h2 class="section_title">Stacks</h2>
     
-            <ul class="container_stacks">
-              <li><i class="fa-brands fa-square-js"></i></li>
-              <li><i class="fa-brands fa-html5"></i></li>
-              <li><i class="fa-brands fa-css3-alt"></i></li>
-              <li><i class="fa-brands fa-python"></i></li>
-              <li><i class="fa-brands fa-square-github"></i></li>
-              <li><i class="fa-brands fa-gitlab"></i></li>
+            <ul class="container_stacks" aria-label="Technologies I use">
+              <li><i class="fa-brands fa-square-js" aria-label="JavaScript"></i></li>
+              <li><i class="fa-brands fa-html5" aria-label="HTML5"></i></li>
+              <li><i class="fa-brands fa-css3-alt" aria-label="CSS3"></i></li>
+              <li><i class="fa-brands fa-python" aria-label="Python"></i></li>
+              <li><i class="fa-brands fa-square-github" aria-label="GitHub"></i></li>
+              <li><i class="fa-brands fa-gitlab" aria-label="GitLab"></i></li>
             </ul>
           </article>
 
-        <section id="projects" class="projects">
+        <section id="projects" class="projects" aria-label="Projects section">
             <h2 class="section_title">Recent Projects</h2>
 
             <div class="projects_grid">
-                <div class="project_card">
-                    <img class="image_project" src="images/projects/vidi.png" alt="Logo Vidi" title="Logo Vidi">
+                <div class="project_card" aria-label="Vidi project">
+                    <img class="image_project" src="images/projects/vidi.png" alt="Logo Vidi" title="Logo Vidi" />
                     <h3>🚀Vidi</h3>
                     <p>
                         📌<strong>Role: QA Leader</strong>
@@ -153,15 +147,14 @@
                         pipelines for continuous testing and integrated with Azure DevOps to optimize workflows.
                     </p>
                     <div class="btn_group">
-                        <a href="https://vidibr.com/" target="_blank"
-                            title="Link Vidi">
+                        <a href="https://vidibr.com/" target="_blank" title="Link Vidi" aria-label="Visit Vidi's official website">
                             <div class="btn">Official Website</div>
                         </a>
                     </div>
                 </div>
 
-                <div class="project_card">
-                   <img class="image_project" src="images/projects/igc.jpg" alt="Logo Igc" title="Logo Igc">
+                <div class="project_card" aria-label="IGC Partners project">
+                   <img class="image_project" src="images/projects/igc.jpg" alt="Logo Igc" title="Logo Igc" />
 
                     <h3>🏢 IGC Partners</h3>
                     <p>📌 <strong>Role: QA Leader</strong></p>
@@ -170,15 +163,14 @@
                         Managed test processes, ensuring quality across various projects. Worked closely with Product Managers and stakeholders to analyze requirements and define testing strategies.
                     </p>
                     <div class="btn_group">
-                        <a href="https://www.igcp.com.br/" target="_blank"
-                            title="Link Igc Partners">
+                        <a href="https://www.igcp.com.br/" target="_blank" title="Link Igc Partners" aria-label="Visit IGC Partners' official website">
                             <div class="btn">Official Website</div>
                         </a>
                     </div>
                 </div>
 
-                <div class="project_card">
-                    <img class="image_project" src="images/projects/vw-new-logo.webp" alt="Logo Volkswagen LM">
+                <div class="project_card" aria-label="Volkswagen LM project">
+                    <img class="image_project" src="images/projects/vw-new-logo.webp" alt="Logo Volkswagen LM" />
                     <h3>Volkswagen - LM </h3>
                     <p>📌 <strong>Role: Senior QA</strong></p>
                     <p>🛠 <strong>Tech Stack: Cypress, Playwright, JavaScript, Postman</strong></p>
@@ -186,24 +178,19 @@
                         Developed and executed automated tests for web applications using Cypress and Playwright. Conducted API testing with Postman and collaborated with developers to optimize software quality.
                     </p>
                     <div class="btn_group">
-                        <a href="https://lmmobilidade.com.br/" target="_blank"
-                            title="Link Volkswagen Lm Mobilidade">
+                        <a href="https://lmmobilidade.com.br/" target="_blank" title="Link Volkswagen Lm Mobilidade" aria-label="Visit Volkswagen LM's official website">
                             <div class="btn">Official Website</div>
                         </a>
                     </div>
                 </div>
-
-               
-
-               
             </div>
         </section>
 
-        <section id="education" class="education">
+        <section id="education" class="education" aria-label="Education section">
             <h2 class="section_title">Education</h2>
 
             <div class="projects_grid">
-                <div class="project_card">
+                <div class="project_card" aria-label="Instituto Infnet education">
                     <div class="container_image">
                         <img src="images/education/infnet.png" alt="faculdade infnet" title="faculdade infnet" />
                     </div>
@@ -214,14 +201,13 @@
                         </p>
                     </div>
                     <div class="btn_group">
-                        <a href="https://www.infnet.edu.br/infnet/home/" target="_blank"
-                            title="Site Oficial faculdade infnet">
+                        <a href="https://www.infnet.edu.br/infnet/home/" target="_blank" title="Site Oficial faculdade infnet" aria-label="Visit Instituto Infnet's official website">
                             <div class="btn">Official Website</div>
                         </a>
                     </div>
                 </div>
 
-                <div class="project_card">
+                <div class="project_card" aria-label="USP education">
                     <div class="container_image">
                         <img src="images/education/USP.jpg" alt="faculdade usp" title="Universidade de São Paulo" />
                     </div>
@@ -232,7 +218,7 @@
                         </p>
                     </div>
                     <div class="btn_group">
-                        <a href="https://www5.usp.br/" target="_blank" title="Site Oficial Universidade de SP">
+                        <a href="https://www5.usp.br/" target="_blank" title="Site Oficial Universidade de SP" aria-label="Visit USP's official website">
                             <div class="btn">Official Website</div>
                         </a>
                     </div>
@@ -241,8 +227,8 @@
         </section>
     </main>
 
-    <footer>
-        <ul>
+    <footer aria-label="Footer">
+        <ul aria-label="Contact information">
           <li>Email: gabrielvolponi11@gmail.com</li>
           <li>Phone: +55 (11) 9.1287-9966</li>
           <li>Brasil - SP</li>
