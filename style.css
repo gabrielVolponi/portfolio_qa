@@ -305,6 +305,12 @@ socials i:hover {
   border-radius: 2rem;
   cursor: pointer;
   transition: 0.3s ease-in-out;
+  min-height: 400px; /* Aumentar a altura mínima dos cards */
+}
+
+.project_card:hover {
+  background-color: black;
+  color: white;
 }
 
 .project_card h3{
@@ -315,11 +321,6 @@ socials i:hover {
     line-height: 20px;
     margin: 1px;
     text-align: start;
-}
-
-.project_card:hover {
-  background-color: black;
-  color: white;
 }
 
 .project_card .image_project {
@@ -366,24 +367,33 @@ socials i:hover {
     object-fit: cover; /* Garantir que a imagem se ajuste ao container */
 }
 
+footer {
+  padding: 4rem 3rem; /* Aumentar o padding para aumentar o tamanho do footer */
+  background-color: black;
+  color: white;
+}
+
 footer ul {
   display: flex;
   list-style-type: none;
-  gap: 3rem;
-  background-color: black;
-  padding: 3rem 3rem;
-  color: white;
+  gap: 4rem; /* Aumentar o espaçamento entre os itens */
   justify-content: center;
   align-items: center;
+}
+
+footer ul li {
+  font-size: 1.5rem; /* Aumentar o tamanho da fonte dos itens */
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
 }
 
 footer ul li:hover {
   background: linear-gradient(to right, #009dff, #ff00ff);
   background-clip: text;
   color: transparent;
-  cursor: pointer;
+  transform: scale(1.1); /* Adicionar um leve efeito de escala no hover */
 }
-
 
 /* Estilo para a barra de rolagem */
 ::-webkit-scrollbar {
