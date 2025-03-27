@@ -1,6 +1,6 @@
 # 👨‍💻 **Quality Engineer Portfolio** 🚀
 
-Welcome to my **Quality Engineer Portfolio**! This project showcases my work, skills, and experience in software quality assurance, test automation, and performance testing. Feel free to explore the repositories and check out the tools and technologies I've used to ensure quality in the software I test. 
+Welcome to my **Quality Engineer Portfolio**! This project showcases my work, skills, and experience in software quality assurance, test automation, and performance testing. Feel free to explore the repositories and check out the tools and technologies I've used to ensure quality in the software I test
 
 ## 🛠️ **Tech Stack**
 
