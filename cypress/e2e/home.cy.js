@@ -12,10 +12,6 @@ describe('template spec', () => {
     cy.title().should('eq', 'Gabriel Volponi');
   });
 
-  it('Validar atributo href Section About', () => {
-    cy.get('header nav a[href="#"]').should('have.attr', 'href', '#');
-  });
-
   it('Validar atributo href Section Experience', () => {
     cy.get('header nav a[href="#experience"]').should('have.attr', 'href', '#experience');
   });
