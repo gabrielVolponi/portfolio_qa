@@ -10,6 +10,10 @@
   list-style: none;
 }
 
+#mini_menu {
+  display: none; /* Ocultar por padrão */
+}
+
 header {
   position: fixed;
   top: 1rem;
@@ -18,20 +22,20 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 5rem;
+  gap: 3rem; /* Espaçamento original entre os elementos */
   background-color: rgba(0, 0, 0, 0.8);
   color: white;
-  padding: 0.5rem 1.5rem;
+  padding: 0.5rem 1.5rem; /* Tamanho original do padding */
   border-radius: 3rem;
   z-index: 1000;
 }
 
 .logo {
   color: white;
-  font-size: 1.3rem;
+  font-size: 1.3rem; /* Tamanho original da fonte */
   font-weight: 600;
   text-wrap: nowrap;
-  transition: 0.3s erase-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .logo:hover {
@@ -40,13 +44,14 @@ header {
 
 .nav_links {
   display: flex;
-  gap: 2rem;
+  gap: 2rem; /* Espaçamento original entre os links */
 }
 
 li a {
   position: relative;
   color: white;
   font-weight: 300;
+  font-size: 1.2rem; /* Tamanho original da fonte dos links */
 }
 
 li a::before {
@@ -66,13 +71,13 @@ li a:hover::before {
 }
 
 .visit_btn {
-  padding: 0.8rem 1.5rem;
+  padding: 0.5rem 1rem; /* Tamanho original do botão */
+  font-size: 0.9rem; /* Tamanho original da fonte */
   border-radius: 3rem;
   border: none;
   font-weight: 300;
-  font-size: 1rem;
   text-wrap: nowrap;
-  transition: 0.3 ease-in-out;
+  transition: 0.3s ease-in-out;
   background: linear-gradient(to right, rgb(0, 157, 255), rgb(255, 0, 255));
   color: white;
   letter-spacing: 1px;
@@ -93,6 +98,10 @@ section {
   padding: 8rem 12%;
   width: 100%;
   position: relative;
+}
+
+section, article {
+  margin-bottom: 3rem; /* Diminuir o espaçamento entre as seções */
 }
 
 .about {
@@ -146,6 +155,10 @@ section {
   gap: 1rem;
 }
 
+.btn_group p {
+  font-size: 24px;
+}
+
 .btn {
   border-radius: 3rem;
   padding: 0.5rem 1.5rem;
@@ -174,7 +187,7 @@ section {
 
 }
 
-.socials i:hover {
+socials i:hover {
   transform: scale(1.1);
 }
 
@@ -190,7 +203,7 @@ section {
   text-align: center;
   font-size: 4rem;
   font-weight: 600;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem; /* Aumentar levemente a margem entre o título e o conteúdo */
 }
 
 .experience_info {
@@ -198,37 +211,42 @@ section {
   align-items: center;
   justify-content: center;
   gap: 5rem;
+  margin-bottom: 3rem; /* Espaçamento entre os cards e a imagem */
 }
 
 .experience img {
-  width: 24vw;
-  border-radius: 3rem;
+  display: block;
+  margin: 2rem auto; /* Centralizar a imagem e ajustar o espaçamento */
+  width: 250px; /* Aumentar o tamanho da imagem */
+  height: auto; /* Manter a proporção */
+  border-radius: 1rem; /* Bordas arredondadas */
+  object-fit: cover; /* Ajustar a imagem ao container */
 }
 
 .stacks {
   height: 10vh;
-  /* margin: 3rem; */
   margin-bottom: 5rem;
   position: relative;
-  top: -10px;
+  top: -30px; /* Subir a seção stacks */
 }
 
 .container_stacks {
   display: flex;
-  flex-wrap: wrap;
-  gap: 3rem;
-  justify-content: center;
-  align-items: center;
+  flex-wrap: wrap; /* Permitir que os ícones quebrem para a próxima linha */
+  justify-content: center; /* Centralizar os ícones */
+  align-items: center; /* Alinhar os ícones verticalmente */
+  gap: 1.5rem; /* Espaçamento entre os ícones */
 }
 
 .container_stacks i {
-  font-size: 50px;
+  font-size: 50px; /* Tamanho padrão dos ícones */
+  transition: 0.3s ease-in-out; /* Adicionar transição para hover */
+  color: #009dff; /* Cor padrão dos ícones */
 }
 
 .container_stacks i:hover {
-  background: linear-gradient(to right, rgb(255, 0, 255), rgb(0, 157, 255));
-  background-clip: text;
-  color: transparent;
+  transform: scale(1.2); /* Aumentar o tamanho no hover */
+  color: #ff00ff; /* Alterar a cor no hover */
 }
 
 .grid {
@@ -271,19 +289,20 @@ section {
 .projects_grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 5rem;
+  gap: 2rem;
+  justify-content: center;
 }
 
 .project_card {
-  padding: 3rem 2rem;
+  padding: 2rem 1.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  gap: 1.5rem;
+  gap: 1rem;
   border: 2px solid black;
-  border-radius: 3rem;
+  border-radius: 2rem;
   cursor: pointer;
   transition: 0.3s ease-in-out;
 }
@@ -304,10 +323,15 @@ section {
 }
 
 .project_card .image_project {
-  width: 20vw;
-  height: 30vh;
+  width: 100%;
+  height: auto;
+}
+
+.project_card .container_image img {
+  width: 100%;
+  height: auto;
+  max-width: 200px;
   border-radius: 1rem;
-  object-fit: cover;
 }
 
 .project_card:hover .btn {
@@ -319,20 +343,27 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 30vw;
+  width: 100%;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.5;
 }
 
 .container_image {
-  width: 25vw;
-  height: 25vw;
+  width: 100%; /* Ajustar para ocupar toda a largura disponível */
+  max-width: 300px; /* Limitar o tamanho máximo */
+  height: auto; /* Manter a proporção */
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 0 auto; /* Centralizar a imagem */
 }
 
 .container_image img{
-    width: 24vw;
-    height: 24vw;
+    width: 100%; /* Ajustar para ocupar toda a largura do container */
+    height: auto; /* Manter a proporção da imagem */
+    border-radius: 1rem; /* Bordas arredondadas */
+    object-fit: cover; /* Garantir que a imagem se ajuste ao container */
 }
 
 footer ul {
@@ -362,5 +393,210 @@ footer ul li:hover {
 ::-webkit-scrollbar-thumb {
   background: linear-gradient(to bottom, rgb(255, 0, 255), rgb(0, 157, 255)); /* Gradiente */
   border-radius: 10px;
+}
+
+@media (max-width: 1366px) {
+  header {
+    padding: 1rem 0.5rem; 
+    
+  }
+  
+  .logo {
+    font-size: 1.8rem; 
+    margin-left: 1rem;
+  }
+
+  .visit_btn {
+    margin-right: 1rem;
+  }
+  
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+  /* Ajustar elementos flexíveis para coluna */
+  .about .about_container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .about img {
+    width: 50vw;
+    height: 50vw;
+    margin-bottom: 2rem;
+  }
+
+  .info_box h1 {
+    font-size: 2.5rem;
+  }
+
+  .info_box h3 {
+    font-size: 1.2rem;
+  }
+
+  .btn_group {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .btn_group p{
+    font-size: 20px;
+  }
+
+  .container_stacks {
+    display: flex;
+    flex-wrap: wrap;
+    
+  }
+
+  .container_stacks i {
+    font-size: 30px;
+    gap: 10rem; 
+    font-size: 70px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .projects_grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project_card {
+    padding: 1.5rem 1rem;
+  }
+
+  .project_card .image_project {
+    width: 100%; /* Ajustar para ocupar toda a largura disponível */
+    height: auto; /* Manter a proporção da imagem */
+  }
+
+  .project_card .container_image img {
+    max-width: 150px;
+  }
+
+  .text_education {
+    font-size: 0.9rem; /* Reduzir o tamanho da fonte */
+  }
+
+  footer ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .container_image {
+    flex-direction: column;
+    width: 80vw;
+    height: auto;
+    max-width: 250px; /* Reduzir o tamanho máximo em telas menores */
+  }
+
+  .container_image img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.8rem; /* Ajustar o arredondamento */
+  }
+
+  .text_education {
+    width: 90vw;
+  }
+
+}
+
+/* Responsividade para telas muito pequenas */
+@media (max-width: 480px) {
+  header {
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  #mini_menu {
+    display: block; /* Exibir apenas em resoluções menores */
+    font-size: 30px;
+  }
+
+  .nav_links {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .about_container img{
+    width: 70vw;
+    height: 70vw;
+  }
+
+  .visit_btn {
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+    padding: 0.5rem 1rem;
+    text-align: center;
+  }
+
+  .info_box h1{
+    font-size: 4rem;
+    line-height: 4rem;
+    margin-bottom: 1rem;
+  }
+
+  .info_box h3{
+    font-size: 1.5rem;
+  }
+
+  .section_title {
+    font-size: 2.5rem;
+  }
+
+  .project_card {
+    padding: 1rem; /* Reduzir ainda mais o padding */
+  }
+
+  .project_card h3 {
+    font-size: 1.5rem;
+  }
+
+  .project_card p {
+    font-size: 0.9rem;
+  }
+
+  .container_stacks i {
+    font-size: 20px; /* Reduzir ainda mais o tamanho dos ícones */
+  }
+
+  .project_card .image_project {
+    width: 100%; /* Ajustar para telas muito pequenas */
+    height: auto; /* Manter a proporção da imagem */
+  }
+
+  .project_card .container_image img {
+    max-width: 120px;
+  }
+
+  .text_education {
+    font-size: 0.8rem; /* Ajustar o tamanho da fonte para telas muito pequenas */
+  }
+
+  .socials {
+    display: flex;
+    gap: 2rem;
+    font-size: 40px;
+  }
+
+  .container_image {
+    max-width: 200px; /* Reduzir ainda mais o tamanho máximo */
+  }
+
+  .container_image img {
+    border-radius: 0.5rem; /* Ajustar o arredondamento */
+  }
+
+  .container_stacks i{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 40px;
+  }
 }
 
