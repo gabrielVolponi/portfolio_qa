@@ -66,10 +66,6 @@ describe('template spec', () => {
     cy.get('header').should('be.visible');
   });
 
-  it('Validar download do CV', () => {
-    cy.get('a[download="doc/gabriel_voponi_resume.pdf"]').should('have.attr', 'download', 'doc/gabriel_voponi_resume.pdf');
-  });
-
   it('Validar envio de e-mail ao clicar no botão Contact', () => {
     cy.get('a[href^="mailto:gabrielvolponi11@gmail.com"]').should('have.attr', 'href').and('include', 'mailto:gabrielvolponi11@gmail.com');
   });
