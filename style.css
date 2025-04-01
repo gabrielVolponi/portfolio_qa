@@ -405,11 +405,62 @@ footer ul li:hover {
   border-radius: 10px;
 }
 
+@media(max-width: 1900px){
+  header{
+    margin-right: 0.3rem;
+  }
+
+  header nav{
+    padding: 0.1rem 0.3rem; 
+    display: flex;
+    justify-content: center;
+  }
+
+  .nav_links{
+    margin-left: 2rem;
+  }
+
+  .nav_links li a{
+    display: flex;
+    font-size: 1.2rem;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .about img {
+    width: 24vw;
+    height: 24vw;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .info_box .text{
+    line-height: 4rem;
+  }
+
+  .socials{
+    position: relative;
+    top: -1rem;
+  }
+
+  .about_cta{
+    display: flex;
+    gap: 1rem;
+    position: relative;
+    top: -1.5rem;
+  }
+
+  .stacks{
+    position: relative;
+    top: -6rem;
+  }
+}
+
 @media (max-width: 1366px) {
   header {
     padding: 1rem 0.5rem; 
-    
   }
+  
   
   .logo {
     font-size: 1.8rem; 
